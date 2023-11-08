@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {height: 100%;}
+
+body {
+    width: 100%;
+    height: 100%;
+    color: #333;
+    background-color:#e9e7e7;
+    font-size: 1em;
+    font-family: 'Segoe UI',sans-serif;
+    line-height: 135%;
+
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {color:#8b9ff5}
+
+a:active {color:#8ce4a6}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9;
+}
+
+hr {
+    display: block;
+    border: 0;
+    height: 1px;
+    border-top: 1px solid #ccc;
+}
+
+/* Selection block */ 
+
+::selection {background: #f58b8b; color:#fff}
+
+/* Стили для шапки */
+
+.right {float: right;}
+.left {float: left;}
+.clear {clear: both;}
+
+header,footer {
+    width: 98%;
+    background-color:#fff;
+    float: left;
+}
+
+header {
+    border-bottom: 2px solid black;
+    padding: 1%;
+
+}
+
+
+#logo {
+    font-size: 2em;
+    font-family: Brush Script MT, Brush Script Std, cursive
+}
+
+.contact {
+    font: 1.5em sans-serif;
+    margin-left: 10px;
+    
+}
+
+input[type=search].field {
+    border-radius: 5px;
+    margin-left: 20px;
+    padding: 5px;
+    border: 2px solid silver;
+}
+
+/* Стили для меню */
+
+#menu {
+    color: #666;
+    font-family: Comic Sans MC, sans-serif;
+    font-size: 2.3em;
+}
+
+#menu hr {
+    width:25%;
+    margin:  9px auto;
+    max-width: 100%;
+}
+
+#menuHrefs a {
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+#menuHrefs a:hover {
+background-color: #d8d7d7;
+}
+
+/* Основные стили для сайта */
+
+#wrapper {
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+}
+
+#wrapper #articles {
+    float: left;
+    width: 80%;
+    margin-left: 10%;
+}
+
+#wrapper #articles article {
+    float: left;
+    border: 1px solid silver;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: #fff;
+    min-height: 400px;
+    margin-bottom: 15px;
+    }
+
+@media screen and (min-width: 900px) {
+    #wrapper #articles article {
+    width: 31.333%;
+    margin-right: 2%;
+    }}
+
+@media screen and (max-width: 899px) and (min-width: 700px) {
+    #wrapper #articles article {
+    width: 80%;
+    margin-left: 10%;
+    }}
+
+@media screen and (max-width: 699px) {
+    #wrapper #articles article {
+    width: 100%;
+    }}
+
+
+#wrapper #articles article img {
+    width: 100%;
+    height: 250px;
+    border-radius: 10px 10px 0px 0px;
+    border-bottom: 2px solid silver;
+    margin-bottom: 10px;
+}
+
+#wrapper #articles article h2 {
+    width: 90%;
+    margin-left: 10%;
+    margin-bottom: 7px;
+    font-weight: normal;
+    font-size: 1.7em;
+    color: #4a4a4a;
+}
+
+#wrapper #articles article p {
+    width: 80%;
+    margin-left: 4%;
+}
+
+#wrapper #articles article a {
+    padding: 7px 5px;
+    background-color: #333;
+    margin-left: 5%;
+    border-radius: 6px;
+    color: #fff;
+    margin-top: 10px;
+    float: left;
+}
+
+#wrapper #articles article a:hover {background-color:black;}
+
+/* Центральный слок сайта */
+
+#main_soc_block {
+    width: 100%;
+    height: 150px;
+    padding: 2% 0;
+    border-bottom: 2px solid silver;
+    border-top: 2px solid silver;
+    margin: 20px 0;
+    float: left;
+    background:url('../img/fon.webp') repeat-x center;
+
+}
+
+#main_soc_block_in {
+    text-align: center;
+    padding: 1%;
+    height: 85px;
+    background-color: #fff;
+    border: 1px solid solid;
+    border-radius: 6px;
+    box-sizing: border-box;
+    width: 500px;
+    max-width: 98%;
+    margin: 0 auto;
+
+}
+
+#main_soc_block_in a {
+    padding: 5px 10px;
+    background-color: #333;
+    border-radius: 6px;
+    color: #fff;
+    float: left;
+    margin-left: 39%;
+    margin-top: 10px;
+}
+
+#main_soc_block_in a:hover {background-color:black;}
+
+
+
+/* Стили для футера */
+
+footer {
+    border-top: 2px solid black;
+    margin-top: 10px;
+    padding: 1%;
+    padding-bottom:2%;
+
+}
+
+footer .right img {
+    width: 22px; 
+    float: left;
+    margin-right: 5px;
+}
+
+#page-wrap::after { 
+    content: '';
+    display: block;
+}
+
+footer, #page-wrap::after {height: 10px;}
+
+#page-wrap {
+    min-height: 94%;
+    margin-bottom: -10px;
+}
+
